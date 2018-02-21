@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personality Test</title>
+
+  <!--CSS & JS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>CHARACTER MATCH SURVEY</h1>
+      <h3>See which Game of Thrones character you match best by answering the questions below.</h3>
+    <hr>
+      <h3><strong>Question 1:</strong></h3>
+        <h4>Power and Hierchy is most important</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 2:</strong></h3>
+    <h4>You care more about friendship than money</h4>
+    <select data-placeholder="" class="chosen-select" id="q2">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 3:</strong></h3>
+    <h4>You are good with creatures and animals.</h4>
+    <select data-placeholder="" class="chosen-select" id="q3">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 4:</strong></h3>
+    <h4>You travel throughout according to your plans</h4>
+    <select data-placeholder="" class="chosen-select" id="q4">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+    <h3><strong>Question 5:</strong></h3>
+    <h4>Loyalty and Respect matters to you the most</h4>
+    <select data-placeholder="" class="chosen-select" id="q5">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 6:</strong></h3>
+    <h4>Your opinion is more important than others.</h4>
+    <select data-placeholder="" class="chosen-select" id="q6">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>Family and clan is your priority when it comes to sacrifices</h4>
+    <select data-placeholder="" class="chosen-select" id="q7">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 8:</strong></h3>
+    <h4>You serve the ones you only believe to be worthy of your King.</h4>
+    <select data-placeholder="" class="chosen-select" id="q8">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 9: </strong></h3>
+    <h4>You prefer variety of food than just one</h4>
+    <select data-placeholder="" class="chosen-select" id="q9">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 10</strong></h3>
+    <h4>You like the quiet village more than the loud cities.</h4>
+    <select data-placeholder="" class="chosen-select" id="q10">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+
+    <hr>
+
+  <footer class="footer">
+    <div class="container">
+        <p> <a href="/api/characters">API Characters List</a> | <a href="/api/friends">API Friends List</a> |
+        <a href="https://github.com/terryucsb/friendfinder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github Repo</a>
+        <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a> </p>
+    </div>
+  </footer>
